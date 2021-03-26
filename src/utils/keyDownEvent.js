@@ -1,5 +1,5 @@
 export const keyDownEvent = (activeContentEditable) => {
-    document.addEventListener('keydown', function (event) {
+    document.addEventListener('keydown', event => {
         if (event.ctrlKey && event.key === 'k') {
             event.preventDefault();
             console.log('pressing');

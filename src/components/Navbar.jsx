@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { Context } from "../context/Context";
 import EditableElement from "./EditableElement";
 export const Navbar = () => {
@@ -7,13 +7,14 @@ export const Navbar = () => {
       initialState: { isContentEditable },
       tagContent: { navbar },
     },
-    setTextContent,
+    setActualTextContent,
   } = useContext(Context);
   return (
     <nav>
       <EditableElement
         isContentEditable={isContentEditable}
-        key_name="navbar.h5_logo"
+        onBlur={setActualTextContent}
+        key_name="navbar.a_products"
       >
         <a href="/">{navbar.a_products}</a>
       </EditableElement>

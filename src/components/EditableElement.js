@@ -16,7 +16,7 @@ const EditableElement = (props) => {
     };
     const handleBlur = () => {
         console.log('blur!!!');
-        // onBlur(key_name, text);
+        onBlur(key_name, text);
         // remove highlight class prop
     }
     const handleFocus = () => {
