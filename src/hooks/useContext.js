@@ -34,14 +34,23 @@ export const useContext = () => {
         });
         window.localStorage.setItem('txtTags', JSON.stringify(tagContent));
     }
-    const toggleContentEditable = () => {
+    const activeContentEditable = () => {
         const initialState = { ...state.initialState, }
-        initialState.isContentEditable = !initialState.isContentEditable
+        initialState.isContentEditable = true;
         setState({
             ...state,
             initialState
         })
-    }
+    };
 
-    return { setTextContent, toggleContentEditable, state };
+    const cancelEditContent = () => {
+        const initialState = { ...state.initialState, }
+        initialState.isContentEditable = false;
+        setState({
+            ...state,
+            initialState
+        })
+    };
+
+    return { setTextContent, cancelEditContent, activeContentEditable, state };
 }
