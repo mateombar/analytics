@@ -1,0 +1,11 @@
+{
+    "navbar": {
+        "a_products": "Products",
+        "a_pricing": "Pricing",
+        "a_faq": "FAQ",
+        "a_blog": "Blog",
+        "a_blog": "Blog",
+        "btn_sign_ing": "Sign in",
+        "btn_sign_up": "Sign up"
+    }
+}
