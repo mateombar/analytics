@@ -37,32 +37,32 @@ export const ListOFCharts = () => {
         <EditableElement
           isContentEditable={isContentEditable}
           onBlur={setActualTextContent}
-          key_name="chart.h1_first"
+          key_name="chart.h1_second"
         >
-          <h1 className="chart__title">{chart.h1_first}</h1>
+          <h1 className="chart__title">{chart.h1_second}</h1>
         </EditableElement>
         <EditableElement
           isContentEditable={isContentEditable}
           onBlur={setActualTextContent}
-          key_name="chart.p_first"
+          key_name="chart.p_second"
         >
-          <p className="chart__text">{chart.p_first}</p>
+          <p className="chart__text">{chart.p_second}</p>
         </EditableElement>
       </Chart>
       <Chart imgSrc={calendar} imgAlt="Bars" rowReverse={true}>
         <EditableElement
           isContentEditable={isContentEditable}
           onBlur={setActualTextContent}
-          key_name="chart.h1_first"
+          key_name="chart.h1_third"
         >
-          <h1 className="chart__title">{chart.h1_first}</h1>
+          <h1 className="chart__title">{chart.h1_third}</h1>
         </EditableElement>
         <EditableElement
           isContentEditable={isContentEditable}
           onBlur={setActualTextContent}
-          key_name="chart.p_first"
+          key_name="chart.p_third"
         >
-          <p className="chart__text">{chart.p_first}</p>
+          <p className="chart__text">{chart.p_third}</p>
         </EditableElement>
       </Chart>
     </section>
