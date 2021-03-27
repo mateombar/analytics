@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
 import { Context } from "../context/Context";
 import { Feature } from "./Feature";
+import { Planning } from "./svg/Planning";
 import { Speed } from "./svg/Speed";
+import { Website } from "./svg/Website";
 import "./styles/ListOfFeatures.css";
 import EditableElement from "./EditableElement";
 export const ListOfFeatures = () => {
@@ -15,7 +17,7 @@ export const ListOfFeatures = () => {
   return (
     <section className="ListOfFeatures">
       <Feature>
-        <article className="feature">
+        <article className="feature pink">
           <EditableElement
             isContentEditable={isContentEditable}
             onBlur={setActualTextContent}
@@ -34,7 +36,7 @@ export const ListOfFeatures = () => {
       </Feature>
       <Feature>
         <article className="feature">
-          <Speed />
+          <Speed classProp="feature__icon pink" />
           <EditableElement
             isContentEditable={isContentEditable}
             onBlur={setActualTextContent}
@@ -52,8 +54,8 @@ export const ListOfFeatures = () => {
         </article>
       </Feature>
       <Feature>
-        <article className="feature">
-          <Speed />
+        <article className="feature pink">
+          <Planning classProp="feature__icon pink" />
           <EditableElement
             isContentEditable={isContentEditable}
             onBlur={setActualTextContent}
@@ -71,8 +73,8 @@ export const ListOfFeatures = () => {
         </article>
       </Feature>
       <Feature>
-        <article className="feature">
-          <Speed />
+        <article className="feature pink">
+          <Website classProp="feature__icon pink" />
           <EditableElement
             isContentEditable={isContentEditable}
             onBlur={setActualTextContent}

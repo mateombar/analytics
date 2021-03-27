@@ -2,8 +2,11 @@
 
 }
 
-.feature .speed{
-    fill: #EF2A82;
+.feature__icon{
     width: 60px;
     height: 60px;
+}
+
+.pink{
+    fill: #EF2A82;
 }
