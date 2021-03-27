@@ -21,5 +21,13 @@
         "p_widget": "Lorem ipsum dolor sit amet, consectetur adipis cing elit. lementum nisi aliquet volutpat.",
         "h4_performance": "Best Performance",
         "p_performance": "Lorem ipsum dolor sit amet, consectetur adipis cing elit. lementum nisi aliquet volutpat."
+    },
+    "chart":{
+        "h1_first": "Automated Reports & Widget Alerts",
+        "p_first": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.",
+        "h1_second": "Fully customizable to address your needs",
+        "p_second": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.",
+        "h1_third": "Pre-built Dashboard Templates",
+        "p_third": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet."
     }
 }

@@ -5,6 +5,7 @@ import { Fold } from "./components/Fold";
 import { Navbar } from "./components/Navbar";
 import { EditableTools } from "./components/EditableTools";
 import { ListOfFeatures } from "./components/ListOfFeatures";
+import { ListOFCharts } from "./components/ListOFCharts";
 import "./App.css";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       </div>
       <main>
         <ListOfFeatures />
+        <ListOFCharts/>
       </main>
     </>
   );

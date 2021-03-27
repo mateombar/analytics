@@ -10,12 +10,6 @@
 .feature {
   margin-top: 50px;
 }
-
-.ListOfFeatures__row {
-  display: flex;
-  justify-content: center;
-}
-
 .feature__icon {
   width: 60px;
   height: 60px;
