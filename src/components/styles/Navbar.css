@@ -1,56 +1,132 @@
 .navbar {
   width: auto;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   padding: 30px 10px;
+  background-color: #333;
+}
+
+.navbar div {
+  display: none;
+}
+
+.navbar__menu,
+.navbar__logo {
+  display: inline-block;
 }
 
 .navbar__logo {
   width: 184.02px;
-  padding-right: 50px;
   cursor: pointer;
+}
+.navbar__menu {
+  padding: 8px;
+  background: none;
+  border: 1px solid #8794ba;
+  transition: all 0.3s ease 0s;
+  border-radius: 68px;
+}
+.navbar__menu .hamburger {
+  fill: #8794ba;
+  width: 16px;
+  height: 16px;
+  transition: all 0.3s ease 0s;
+}
+.navbar__menu:hover {
+  border: 1px solid #fff;
+}
+.navbar__menu:hover > .hamburger {
+  fill: #fff;
 }
 
 .navbar__links {
-  list-style: none;
-  margin-left: 30px;
+  display: none;
 }
-.navbar__links--link {
-  display: inline-block;
-  padding: 5px 20px;
-}
-.navbar__links--link a{
+
+.navbar__links a {
   transition: all 0.3s ease 0s;
-  color: #8794BA;
-  
+  color: #8794ba;
+  display: block;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
 }
-.navbar__links--link a:hover{
-    color: #fff;
+.navbar__links a:hover {
+  color: #fff;
 }
 
 .navbar__buttons {
-    padding-left: 20px;
-    margin-left: auto;
+  display: none;
 }
-.navbar__buttons--btn{
-    padding: 5px 40px;
-    border: 1px solid #8794BA;
-    border-radius: 68px;
-    color: #8794BA;
-    background: none;
-    transition: all 0.3s ease 0s;
+.navbar__buttons--btn {
+  padding: 5px 40px;
+  border: 1px solid #8794ba;
+  border-radius: 68px;
+  color: #8794ba;
+  background: none;
+  transition: all 0.3s ease 0s;
+  display: block;
+  text-align: center;
 }
-.navbar__buttons--btn:hover{
-    border: 1px solid #fff;
-    color: #fff;
+.navbar__buttons--btn:hover {
+  border: 1px solid #fff;
+  color: #fff;
 }
-.navbar__buttons--link{
-    padding: 5px 40px;
-    color: #8794BA;
-    transition: all 0.3s ease 0s;
+.navbar__buttons--link {
+  padding: 5px 40px;
+  color: #8794ba;
+  transition: all 0.3s ease 0s;
+  display: block;
+  text-align: center;
 }
-.navbar__buttons--link:hover{
-    color: #fff;
-    cursor: pointer;
+.navbar__buttons--link:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (min-width: 48em) {
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  .navbar__links,
+  .navbar__buttons {
+    display: flex;
+    flex: 1;
+  }
+  .navbar__links a,
+  .navbar__buttons--link,
+  .navbar__buttons--btn {
+    width: auto;
+  }
+  .navbar__buttons {
+    justify-content: flex-end;
+  }
+  .navbar__menu {
+    display: none;
+  }
+}
+@media (min-width: 48em) {
+  .navbar div {
+    display: flex;
+  }
+}
+@media (max-width: 48em) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar__buttons--link,
+  .navbar__buttons--btn {
+    margin: 1em 0;
+  }
+  .navbar.active {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar.active div {
+    display: block;
+  }
+  .navbar.active .navbar__menu {
+    margin: 1em 0;
+  }
 }

@@ -11,6 +11,7 @@ body {
   grid-template-columns: minmax(auto, 980px);
   display: grid;
   justify-content: center;
+  min-height: 100vh;
 }
 
 li,
