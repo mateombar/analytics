@@ -20,6 +20,10 @@ body {
   background-image: url("./assets/svg/background-top.svg");
   background-repeat: no-repeat;
 }
+.bot {
+  background-image: url("./assets/svg/background-bottom.svg");
+  background-repeat: no-repeat;
+}
 
 @media (min-width: 1600px) {
   #root {

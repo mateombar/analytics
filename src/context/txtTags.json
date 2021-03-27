@@ -29,5 +29,26 @@
         "p_second": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.",
         "h1_third": "Pre-built Dashboard Templates",
         "p_third": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet."
+    },
+    "plans":{
+        "h1_presentation": "Pricing Plans",
+        "p_presentation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. ",
+        "h1_title_card_1": "Starter",
+        "p_title_card_1": "up to 3 users",
+        "h1_number_card_1": "$29",
+        "p_number_card_1": "per month",
+        "btn_card_1": "Order",
+
+        "h1_title_card_2": "Standard",
+        "p_title_card_2": "up to 20 users",
+        "h1_number_card_2": "$99",
+        "p_number_card_2": "per month",
+        "btn_card_2": "Order",
+
+        "h1_title_card_3": "Premium",
+        "p_title_card_3": "up to 200 users",
+        "h1_number_card_3": "$299",
+        "p_number_card_3": "per month",
+        "btn_card_3": "Order"
     }
 }

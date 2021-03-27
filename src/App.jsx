@@ -6,6 +6,7 @@ import { Navbar } from "./components/Navbar";
 import { EditableTools } from "./components/EditableTools";
 import { ListOfFeatures } from "./components/ListOfFeatures";
 import { ListOFCharts } from "./components/ListOFCharts";
+import { Plans } from "./components/Plans";
 import "./App.css";
 
 function App() {
@@ -30,6 +31,9 @@ function App() {
         <ListOfFeatures />
         <ListOFCharts/>
       </main>
+      <div className="bot">
+        <Plans/>
+      </div>
     </>
   );
 }
