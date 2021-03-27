@@ -7,5 +7,10 @@
         "a_blog": "Blog",
         "btn_sign_ing": "Sign in",
         "btn_sign_up": "Sign up"
+    },
+    "fold": {
+        "h1_f_article": "Monitor your business on real-time dashboard",
+        "p_f_article": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. ",
+        "btn_f_article": "Try for free"
     }
 }

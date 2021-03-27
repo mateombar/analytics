@@ -78,7 +78,7 @@ export const Navbar = () => {
             onBlur={setActualTextContent}
             key_name="navbar.btn_sign_up"
           >
-            <button className="navbar__buttons--btn">
+            <button className="navbar__buttons--btn" type="button">
               {navbar.btn_sign_up}
             </button>
           </EditableElement>

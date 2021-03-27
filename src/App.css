@@ -11,26 +11,27 @@ body {
   justify-content: center;
   min-height: 100vh;
   overflow-x: hidden;
+  background-image: url("./assets/svg/background-top.svg");
+  background-repeat: no-repeat;
 }
-#root{
+#root {
   width: 100%;
 }
-@media (min-width: 1200px){
-  #root{
-    width: 1200px;
+@media (min-width: 1600px) {
+  #root {
+    width: 1600px;
   }
 }
 
 @supports (display: grid) {
-  body {
-    grid-template-columns: minmax(auto, 1200px);
+   #root  {
+    grid-template-columns: minmax(auto, 1600px);
     display: grid;
     justify-content: center;
     min-height: 100vh;
     overflow-x: hidden;
   }
 }
-
 
 li,
 a,
