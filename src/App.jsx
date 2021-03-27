@@ -4,6 +4,7 @@ import { keyDownEvent } from "./utils/keyDownEvent";
 import { Fold } from "./components/Fold";
 import { Navbar } from "./components/Navbar";
 import { EditableTools } from "./components/EditableTools";
+import {ListOfFeatures} from './components/ListOfFeatures';
 import "./App.css";
 
 function App() {
@@ -22,7 +23,9 @@ function App() {
       <Navbar></Navbar>
       <EditableTools />
       <Fold></Fold>
-      <main></main>
+      <main>
+        <ListOfFeatures/>
+      </main>
     </>
   );
 }

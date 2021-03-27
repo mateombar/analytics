@@ -26,6 +26,7 @@ export const Navbar = () => {
           alt="Logo"
           onClick={handleClick}
         />
+        
         <div className="navbar__links">
           <EditableElement
             isContentEditable={isContentEditable}
