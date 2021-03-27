@@ -1,0 +1,122 @@
+.plans {
+  padding: 30px 10px;
+  width: 100%;
+}
+.plans__presentation {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+}
+.plans__title {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.plans__description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #8794ba;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.plans__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 340px;
+  height: 440px;
+  background: #0f1f4bc7;
+
+  box-shadow: 0px 18px 50px -15px rgba(19, 31, 67, 0.7);
+  border-radius: 30px;
+
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.card--white {
+  background: #fff;
+}
+
+.card__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0em;
+  color: #fff;
+  margin-top: 50px;
+}
+.card--white .card__title,
+.card--white .card__number {
+  color: #172755;
+}
+.card__users {
+  color: #8794ba;
+  margin-top: 10px;
+  margin-bottom: 37px;
+}
+.card__number {
+  font-size: 60px;
+  color: #fff;
+  margin-top: 28px;
+}
+
+.card__p-number {
+  color: #8794ba;
+}
+.card__btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 83px;
+  width: 206px;
+  height: 50px;
+  background: #0F1F4B;
+  border-radius: 68px;
+  border: 1px solid #8794BA;
+  color: #fff;
+  margin-top: 40px;
+}
+.card__btn--pink{
+    background: #ef2a82;
+    border: none;
+  }
+@media (min-width: 900px) {
+  .plans {
+    max-width: 1260px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .plans__presentation {
+    max-width: 600px;
+  }
+
+  .plans__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .card {
+    margin: 0 40px;
+  }
+}

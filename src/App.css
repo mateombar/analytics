@@ -16,15 +16,6 @@ body {
   width: 100%;
 }
 
-.top {
-  background-image: url("./assets/svg/background-top.svg");
-  background-repeat: no-repeat;
-}
-.bot {
-  background-image: url("./assets/svg/background-bottom.svg");
-  background-repeat: no-repeat;
-}
-
 @media (min-width: 1600px) {
   #root {
     width: 1600px;
@@ -65,8 +56,25 @@ h5,
 h6 {
   padding: 3px 0;
 }
+.top {
+  background-image: url("./assets/svg/background-top.svg");
+  background-repeat: no-repeat;
+}
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.bot {
+  background-image: url("./assets/png/background-bottom.png");
+  /* background-repeat: no-repeat; */
+  height: auto;
+  min-height: 1225px;
+}
+hr {
+   border: none;
+    height: 1px;
+    width: 220px;
+    color: #2A407C; 
+    background-color: #2A407C;
 }
