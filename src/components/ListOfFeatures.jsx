@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { Context } from "../context/Context";
-import { Feature } from "./Feature";
 import { Planning } from "./svg/Planning";
 import { Speed } from "./svg/Speed";
 import { Website } from "./svg/Website";
@@ -16,81 +15,82 @@ export const ListOfFeatures = () => {
   } = useContext(Context);
   return (
     <section className="ListOfFeatures">
-      <Feature>
-        <article className="feature pink">
-          <EditableElement
-            isContentEditable={isContentEditable}
-            onBlur={setActualTextContent}
-            key_name="feature.h1_main"
-          >
-            <h1>{feature.h1_main}</h1>
-          </EditableElement>
-          <EditableElement
-            isContentEditable={isContentEditable}
-            onBlur={setActualTextContent}
-            key_name="feature.p_main"
-          >
-            <p>{feature.p_main}</p>
-          </EditableElement>
-        </article>
-      </Feature>
-      <Feature>
+      <article className="feature">
+        <EditableElement
+          isContentEditable={isContentEditable}
+          onBlur={setActualTextContent}
+          key_name="feature.h1_main"
+        >
+          <h1 className="feature__title">{feature.h1_main}</h1>
+        </EditableElement>
+        <EditableElement
+          isContentEditable={isContentEditable}
+          onBlur={setActualTextContent}
+          key_name="feature.p_main"
+        >
+          <p className="feature__text">{feature.p_main}</p>
+        </EditableElement>
+      </article>
+
+      <div className="ListOfFeatures__row">
         <article className="feature">
-          <Speed classProp="feature__icon pink" />
+          <Speed iconClass="feature__icon feature__icon--pink" />
           <EditableElement
             isContentEditable={isContentEditable}
             onBlur={setActualTextContent}
             key_name="feature.h4_monitoring"
           >
-            <h1>{feature.h4_monitoring}</h1>
+            <h4 className="feature__title feature__title--small">
+              {feature.h4_monitoring}
+            </h4>
           </EditableElement>
           <EditableElement
             isContentEditable={isContentEditable}
             onBlur={setActualTextContent}
             key_name="feature.p_monitoring"
           >
-            <p>{feature.p_monitoring}</p>
+            <p className="feature__text">{feature.p_monitoring}</p>
           </EditableElement>
         </article>
-      </Feature>
-      <Feature>
-        <article className="feature pink">
-          <Planning classProp="feature__icon pink" />
+        <article className="feature">
+          <Planning iconClass="feature__icon feature__icon--pink" />
           <EditableElement
             isContentEditable={isContentEditable}
             onBlur={setActualTextContent}
             key_name="feature.h4_widget"
           >
-            <h1>{feature.h4_widget}</h1>
+            <h4 className="feature__title feature__title--small">
+              {feature.h4_widget}
+            </h4>
           </EditableElement>
           <EditableElement
             isContentEditable={isContentEditable}
             onBlur={setActualTextContent}
             key_name="feature.p_widget"
           >
-            <p>{feature.p_widget}</p>
+            <p className="feature__text">{feature.p_widget}</p>
           </EditableElement>
         </article>
-      </Feature>
-      <Feature>
-        <article className="feature pink">
-          <Website classProp="feature__icon pink" />
+        <article className="feature">
+          <Website iconClass="feature__icon feature__icon--pink" />
           <EditableElement
             isContentEditable={isContentEditable}
             onBlur={setActualTextContent}
             key_name="feature.h4_performance"
           >
-            <h1>{feature.h4_performance}</h1>
+            <h4 className="feature__title feature__title--small">
+              {feature.h4_performance}
+            </h4>
           </EditableElement>
           <EditableElement
             isContentEditable={isContentEditable}
             onBlur={setActualTextContent}
             key_name="feature.p_performance"
           >
-            <p>{feature.p_performance}</p>
+            <p className="feature__text">{feature.p_performance}</p>
           </EditableElement>
         </article>
-      </Feature>
+      </div>
     </section>
   );
 };
