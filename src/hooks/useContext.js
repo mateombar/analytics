@@ -3,7 +3,6 @@ import initialState from '../context/initialState.json';
 import txtTags from '../context/txtTags.json';
 export const useContext = () => {
     const [state, setState] = useState({});
-
     useEffect(() => {
         const content = JSON.parse(window.localStorage.getItem('txtTags'));
         if (content) {
@@ -45,24 +44,35 @@ export const useContext = () => {
         window.localStorage.setItem('txtTags', JSON.stringify(tagContent));
     }
     const activeContentEditable = () => {
-        const tagContent = { ...state.tagContent };
-        const initialState = { ...state.initialState, }
+        const initialState = { ...state.initialState }
         initialState.isContentEditable = true;
-        setState({
-            ...state,
-            initialState,
-            actualTagContent: tagContent
-        })
+        const content = JSON.parse(window.localStorage.getItem('txtTags'));
+        if (content) {
+            setState({
+                ...state,
+                initialState,
+                tagContent: content,
+                actualTagContent: content
+            })
+        } else {
+            setState({
+                ...state,
+                initialState: initialState,
+                actualTagContent: state.tagContent
+            })
+        }
+
+
     };
 
-    const cancelEditContent = async() => {
+    const cancelEditContent = async () => {
         const initialState = { ...state.initialState, }
         initialState.isContentEditable = false;
         const tagContent = { ...state.tagContent };
-        const actualTagContent = {...state.actualTagContent};
+        const actualTagContent = { ...state.actualTagContent };
         await setState({
             ...state,
-            tagContent: {... actualTagContent},
+            tagContent: { ...actualTagContent },
         })
         await setState({
             ...state,
