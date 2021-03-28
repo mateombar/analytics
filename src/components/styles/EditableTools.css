@@ -1,0 +1,34 @@
+.tools {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 10px;
+}
+.tools__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 30px;
+  border-radius: 68px;
+  border: none;
+  transition: all 0.3s ease 0s;
+}
+.tools__button--save {
+  background: #ef2a82;
+  margin-right: 10px;
+  color: #fff;
+}
+.tools__button--save:hover {
+  border: 1px solid #ff308d;
+}
+.tools__button--cancel {
+  background: #172755;
+  border: 1px solid #8794ba;
+  color: #8794ba;
+}
+.tools__button--cancel:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}

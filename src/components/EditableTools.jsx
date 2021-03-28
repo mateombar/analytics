@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../context/Context";
+import './styles/EditableTools.css';
 export const EditableTools = () => {
   const {
     state: {
