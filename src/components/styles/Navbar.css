@@ -1,5 +1,5 @@
 .navbar {
-  width: auto;
+  width: 100%;
   padding: 30px 10px;
   /* background-color: #172755; */
 }
@@ -119,6 +119,12 @@
     margin: 1em 0;
   }
   .navbar.active {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar.active .navbar__buttons{
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;

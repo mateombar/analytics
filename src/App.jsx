@@ -24,17 +24,23 @@ function App() {
   return (
     <>
       <div className="top">
-        <Navbar></Navbar>
-        <EditableTools />
-        <Fold></Fold>
+        <div className="container">
+          <Navbar></Navbar>
+          <EditableTools />
+          <Fold></Fold>
+        </div>
       </div>
       <main>
-        <ListOfFeatures />
-        <ListOFCharts/>
+        <div className="container">
+          <ListOfFeatures />
+          <ListOFCharts />
+        </div>
       </main>
       <div className="bot">
-        <Plans/>
-        <Footer/>
+        <div className="container">
+          <Plans />
+          <Footer />
+        </div>
       </div>
     </>
   );

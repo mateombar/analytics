@@ -7,30 +7,61 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 body {
-  display: flex;
-  justify-content: center;
   min-height: 100vh;
   overflow-x: hidden;
 }
-#root {
-  width: 100%;
+
+.container {
+  max-width: 1600px;
 }
 
+.top {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  background-image: url("./assets/svg/background-top.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: 100%;
+  height: auto;
+}
+.bot {
+  background-image: url("./assets/svg/background-bottom.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-size: 100%;
+  height: auto;
+  min-height: 1225px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1600px;
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  .top {
+    background-color: #172755;
+  }
+}
+@media (max-width: 1500px) {
+  .bot {
+    background-color: #172755;
+  }
+}
 @media (min-width: 1600px) {
-  #root {
+  .container {
     width: 1600px;
   }
 }
 
-@supports (display: grid) {
-  #root {
-    grid-template-columns: minmax(auto, 1600px);
-    display: grid;
-    justify-content: center;
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
-}
+/* @supports (display: grid) {
+
+} */
 
 li,
 a,
@@ -56,25 +87,17 @@ h5,
 h6 {
   padding: 3px 0;
 }
-.top {
-  background-image: url("./assets/svg/background-top.svg");
-  background-repeat: no-repeat;
-}
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.bot {
-  background-image: url("./assets/png/background-bottom.png");
-  /* background-repeat: no-repeat; */
-  height: auto;
-  min-height: 1225px;
-}
+
 hr {
-   border: none;
-    height: 1px;
-    width: 220px;
-    color: #2A407C; 
-    background-color: #2A407C;
+  border: none;
+  height: 1px;
+  width: 220px;
+  color: #2a407c;
+  background-color: #2a407c;
 }

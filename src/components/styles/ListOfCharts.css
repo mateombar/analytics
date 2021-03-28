@@ -9,6 +9,7 @@
   align-items: center;
   flex-direction: column;
   padding: 50px 0;
+  width: 100%;
 }
 .chart__image {
   width: 90%;
@@ -52,6 +53,7 @@
   }
   .chart {
     flex-direction: row;
+    justify-content: space-between;
   }
   .chart--revert {
     flex-direction: row-reverse;

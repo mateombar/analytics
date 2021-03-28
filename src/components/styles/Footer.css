@@ -3,7 +3,6 @@
   width: 100%;
   margin-top: 100px;
   border-top: 1px solid #8794ba;
-  background-color: #172755;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,6 +47,7 @@
 @media (min-width: 900px) {
   .footer {
     max-width: 1260px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
