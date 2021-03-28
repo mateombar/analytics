@@ -21,7 +21,7 @@
   color: #fff;
 }
 .tools__button--save:hover {
-  border: 1px solid #ff308d;
+  background: #d32573;
 }
 .tools__button--cancel {
   background: #172755;

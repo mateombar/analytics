@@ -21,17 +21,29 @@
 .footer__link {
   padding: 10px;
   color: #8794ba;
+  transition: all 0.3s ease 0s;
+}
+.footer__link:hover {
+  color: #fff;
 }
 .footer__icons {
   fill: #8794ba;
   width: 20px;
   height: 20px;
+  transition: all 0.3s ease 0s;
 }
 .footer__icons--instagram {
   fill: none;
   stroke: #8794ba;
   width: 20px;
   height: 20px;
+}
+.footer__icons:hover {
+  fill: #fff;
+}
+.footer__icons--instagram:hover {
+  fill: none;
+  stroke: #fff;
 }
 @media (min-width: 900px) {
   .footer {

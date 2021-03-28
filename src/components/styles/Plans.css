@@ -94,10 +94,18 @@
   border: 1px solid #8794ba;
   color: #fff;
   margin-top: 40px;
+  transition: all 0.3s ease 0s;
+}
+.card__btn:hover {
+  border: 1px solid #fff;
+  color: #fff;
 }
 .card__btn--pink {
   background: #ef2a82;
   border: none;
+}
+.card__btn--pink:hover {
+  background: #d32573;
 }
 
 @media (min-width: 1250px) {

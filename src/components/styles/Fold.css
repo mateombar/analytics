@@ -42,8 +42,13 @@
   border: none;
   border-radius: 68px;
   padding: 10px, 80px, 10px, 80px;
-  background: #EF2A82;
-    color: #fff;
+  transition: all 0.3s ease 0s;
+  background: #ef2a82;
+  color: #fff;
+}
+
+.fold__content button:hover {
+  background: #d32573;
 }
 
 .fold__chart img {
