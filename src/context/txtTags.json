@@ -50,5 +50,11 @@
         "h1_number_card_3": "$299",
         "p_number_card_3": "per month",
         "btn_card_3": "Order"
+    },
+    "footer":{
+        "a_product": "Product",
+        "a_plans": "Pricing Plans",
+        "a_faq": "FAQ",
+        "a_blog": "Blog"
     }
 }

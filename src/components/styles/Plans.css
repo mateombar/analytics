@@ -1,6 +1,7 @@
 .plans {
   padding: 30px 10px;
   width: 100%;
+  margin-top: 255px;
 }
 .plans__presentation {
   display: flex;
@@ -88,17 +89,18 @@
   padding: 10px 83px;
   width: 206px;
   height: 50px;
-  background: #0F1F4B;
+  background: #0f1f4b;
   border-radius: 68px;
-  border: 1px solid #8794BA;
+  border: 1px solid #8794ba;
   color: #fff;
   margin-top: 40px;
 }
-.card__btn--pink{
-    background: #ef2a82;
-    border: none;
-  }
-@media (min-width: 900px) {
+.card__btn--pink {
+  background: #ef2a82;
+  border: none;
+}
+
+@media (min-width: 1250px) {
   .plans {
     max-width: 1260px;
     display: flex;
@@ -110,7 +112,6 @@
   .plans__presentation {
     max-width: 600px;
   }
-
   .plans__card {
     display: flex;
     flex-direction: row;

@@ -7,6 +7,7 @@ import { EditableTools } from "./components/EditableTools";
 import { ListOfFeatures } from "./components/ListOfFeatures";
 import { ListOFCharts } from "./components/ListOFCharts";
 import { Plans } from "./components/Plans";
+import { Footer } from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       </main>
       <div className="bot">
         <Plans/>
+        <Footer/>
       </div>
     </>
   );
