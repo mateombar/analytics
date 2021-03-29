@@ -3,7 +3,7 @@ import * as React from "react"
 export const Speed = (props) => {
     
     return (
-        <svg className={props.iconClass}
+        <svg className={props.iconclass}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512.005 512.005"
             {...props}

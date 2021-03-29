@@ -34,7 +34,7 @@ export const ListOfFeatures = () => {
 
       <div className="ListOfFeatures__row">
         <article className="feature">
-          <Speed iconClass="feature__icon feature__icon--pink" />
+          <Speed iconclass="feature__icon feature__icon--pink" />
           <EditableElement
             isContentEditable={isContentEditable}
             onBlur={setActualTextContent}
@@ -53,7 +53,7 @@ export const ListOfFeatures = () => {
           </EditableElement>
         </article>
         <article className="feature">
-          <Planning iconClass="feature__icon feature__icon--pink" />
+          <Planning iconclass="feature__icon feature__icon--pink" />
           <EditableElement
             isContentEditable={isContentEditable}
             onBlur={setActualTextContent}
@@ -72,7 +72,7 @@ export const ListOfFeatures = () => {
           </EditableElement>
         </article>
         <article className="feature">
-          <Website iconClass="feature__icon feature__icon--pink" />
+          <Website iconclass="feature__icon feature__icon--pink" />
           <EditableElement
             isContentEditable={isContentEditable}
             onBlur={setActualTextContent}
