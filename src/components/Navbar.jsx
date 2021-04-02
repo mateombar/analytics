@@ -84,7 +84,7 @@ export const Navbar = () => {
             </button>
           </EditableElement>
         </div>
-        <button className="navbar__menu" onClick={handleClick}>
+        <button className="navbar__menu" aria-label="Open, close menu" onClick={handleClick}>
           <Hamburger />
         </button>
       </nav>

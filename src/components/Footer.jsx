@@ -49,13 +49,13 @@ export const Footer = () => {
         </EditableElement>
       </nav>
       <div className="footer__social-media">
-        <a href="/" className="footer__link">
+        <a href="/" aria-label="Link to Instagram" className="footer__link">
           <Instagram />
         </a>
-        <a href="/" className="footer__link">
+        <a href="/" aria-label="Link to Twitter" className="footer__link">
           <Twitter />
         </a>
-        <a href="/" className="footer__link">
+        <a href="/" aria-label="Link to Facebook" className="footer__link">
           <Facebook />
         </a>
       </div>

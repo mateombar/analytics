@@ -40,9 +40,9 @@ export const ListOfFeatures = () => {
             onBlur={setActualTextContent}
             key_name="feature.h4_monitoring"
           >
-            <h4 className="feature__title feature__title--small">
+            <h2 className="feature__title feature__title--small">
               {feature.h4_monitoring}
-            </h4>
+            </h2>
           </EditableElement>
           <EditableElement
             isContentEditable={isContentEditable}
@@ -59,9 +59,9 @@ export const ListOfFeatures = () => {
             onBlur={setActualTextContent}
             key_name="feature.h4_widget"
           >
-            <h4 className="feature__title feature__title--small">
+            <h2 className="feature__title feature__title--small">
               {feature.h4_widget}
-            </h4>
+            </h2>
           </EditableElement>
           <EditableElement
             isContentEditable={isContentEditable}
@@ -78,9 +78,9 @@ export const ListOfFeatures = () => {
             onBlur={setActualTextContent}
             key_name="feature.h4_performance"
           >
-            <h4 className="feature__title feature__title--small">
+            <h2 className="feature__title feature__title--small">
               {feature.h4_performance}
-            </h4>
+            </h2>
           </EditableElement>
           <EditableElement
             isContentEditable={isContentEditable}
