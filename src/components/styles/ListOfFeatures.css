@@ -6,10 +6,9 @@
 .ListOfFeatures__row {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
-.feature {
-  margin-top: 50px;
-}
+
 .feature__icon {
   width: 60px;
   height: 60px;
@@ -27,6 +26,10 @@
     fill: #d32573;
 }
 
+.feature {
+  margin-top: 50px;
+  width: 100%;
+}
 
 .feature__title {
   font-size: 40px;
@@ -61,5 +64,13 @@
 @media (min-width: 768px) {
   .ListOfFeatures {
     max-width: 1260px;
+  }
+  .feature {
+    margin-top: 50px;
+    width: 33%;
+  }
+  .feature--large {
+    margin-top: 50px;
+    width: 100%;
   }
 }

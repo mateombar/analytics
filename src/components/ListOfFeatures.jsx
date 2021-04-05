@@ -15,7 +15,7 @@ export const ListOfFeatures = () => {
   } = useContext(Context);
   return (
     <section className="ListOfFeatures">
-      <article className="feature">
+      <article className="feature feature--large">
         <EditableElement
           isContentEditable={isContentEditable}
           onBlur={setActualTextContent}
