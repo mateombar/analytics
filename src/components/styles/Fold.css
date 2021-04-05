@@ -9,11 +9,6 @@
   width: 100%;
 }
 
-.fold__chart {
-  width: 100%;
-  height: auto;
-}
-
 .fold__content h1 {
   font-size: 50px;
   font-weight: 700;
@@ -50,6 +45,11 @@
   background: #d32573;
 }
 
+.fold__chart {
+  width: 100%;
+  height: auto;
+}
+
 .fold__chart img {
   width: 100%;
   height: auto;
@@ -59,7 +59,7 @@
   .fold {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
   }
   .fold__content {
     max-width: 550px;
@@ -67,8 +67,10 @@
   .fold__chart {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
   }
   .fold__chart img {
     width: 874px;
+    height: auto;
   }
 }
