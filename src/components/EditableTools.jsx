@@ -1,7 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Context } from "../context/Context";
 import './styles/EditableTools.css';
 export const EditableTools = () => {
+  const [animation, setAnimation] = useState('tools slideInDown');
   const {
     state: {
       initialState: { isContentEditable },
@@ -9,18 +10,34 @@ export const EditableTools = () => {
     cancelEditContent,
     saveTextContentToLS,
   } = useContext(Context);
+  useEffect(() => {
+    setAnimation('tools slideInDown');
+  }, [isContentEditable])
+
+  const handleClick = async (action = false) => {
+    await setAnimation('tools slideOutUp')
+    switch (action) {
+      case true:
+        saveTextContentToLS();
+        break;
+      default:
+        cancelEditContent();
+        break;
+    }
+  }
+
   if (isContentEditable)
     return (
-      <div className="tools">
+      <div className={animation}>
         <button
           className="tools__button tools__button--save"
-          onClick={saveTextContentToLS}
+          onClick={() => handleClick(true)}
         >
           Save
         </button>
         <button
           className="tools__button tools__button--cancel"
-          onClick={cancelEditContent}
+          onClick={() => handleClick()}
         >
           Cancel
         </button>
